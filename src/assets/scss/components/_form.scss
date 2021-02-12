@@ -6,3 +6,10 @@
     font-size: $unit-spacing--1;
   }
 }
+
+.form-group--error-msg {
+  font-family: $typography-primary-regular;
+  font-size: $unit-spacing--1;
+  color: red;
+  padding-top: $unit-spacing;
+}

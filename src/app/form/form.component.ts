@@ -11,7 +11,7 @@ import { User } from '../user/user.model';
 export class FormComponent implements OnInit {
   nameInput: string;
   surnameInput: string;
-  addressInput: string;
+  emailInput: string;
   birthdateInput: number;
 
   constructor(private userService: UserService ) {
@@ -24,7 +24,7 @@ export class FormComponent implements OnInit {
     const user1 = new User(
       this.nameInput,
       this.surnameInput,
-      this.addressInput,
+      this.emailInput,
       this.birthdateInput
     );
     this.userService.addUser(user1);

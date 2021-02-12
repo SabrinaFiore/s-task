@@ -2,9 +2,9 @@
   <div class="form-group">
     <label for="name" class="form--label">Name</label>
     <input
+      id="name"
       type="text"
       name="name"
-      id="name"
       placeholder="name"
       class="form-control"
       [(ngModel)]="nameInput"
@@ -13,35 +13,44 @@
   <div class="form-group">
     <label for="surname" class="form--label">Surname</label>
     <input
+      id="surname"
       type="text"
       name="surname"
-      id="surname"
       placeholder="surname"
       class="form-control"
       [(ngModel)]="surnameInput"
       >
   </div>
-  <div class="form-group">
-    <label for="address" class="form--label">Adress</label>
+  <div class="form-group" [class.has-error]="email.invalid && email.touched">
+    <label for="email" class="form--label control-label">Email</label>
     <input
+      id="email"
+      required
+      email
       type="text"
-      name="address"
-      id="address"
-      placeholder="adress"
+      name="email"
+      placeholder="email"
       class="form-control"
-      [(ngModel)]="addressInput"
+      #email="ngModel"
+      [(ngModel)]="emailInput"
       >
+      <span
+        class="help-block form-group--error-msg"
+        *ngIf="email.errors?.required && email.touched">
+        Email is required
+      </span>
   </div>
   <div class="form-group">
     <!-- connect age pipe with user model to display age > 18
       <app-age-calculator
-        [(ngModel)]="birthdateInput"
+        git branch -M main
       ></app-age-calculator>
     -->
     <app-age-calculator
     ></app-age-calculator>
   </div>
 </form>
+<div class="unit-spacing--3"></div>
 <div class="user-input--button">
   <button
     type="submit"
