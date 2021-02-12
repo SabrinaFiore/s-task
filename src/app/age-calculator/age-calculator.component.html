@@ -1,0 +1,27 @@
+<div class="form-group row flex-end">
+  <div class="col">
+    <label for="address" class="form--label">Year of Birthdate</label>
+    <input
+      type="text"
+      name="birthyear"
+      id="birthyear"
+      placeholder="birthyear"
+      class="form-control"
+      [(ngModel)]="year.name"
+    >
+  </div>
+  <div class="col">
+    <button
+      type="button"
+      value="Get Age"
+      class="btn btn-outline-secondary"
+      (click)="onSubmit()"
+      >Validate Age
+    </button>
+  </div>
+</div>
+<p
+  [ngStyle]="{'color': showColor}"
+  class="age-calculator--text">
+  {{ ageType.name }}
+</p>

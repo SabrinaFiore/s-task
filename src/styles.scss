@@ -1,0 +1,16 @@
+/* Settings */
+@import '../src/assets/scss/tools/media-queries';
+@import '../src/assets/scss/tools/wrapper';
+
+/* Base */
+@import '../src/assets/scss/settings/typography';
+@import '../src/assets/scss/settings/reset';
+@import '../src/assets/scss/settings/unit';
+
+/* Elements */
+@import '../src/assets/scss/elements/headings';
+
+/* Components */
+@import '../src/assets/scss/components/form';
+@import '../src/assets/scss/components/age-calculator';
+

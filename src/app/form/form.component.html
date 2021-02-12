@@ -1,0 +1,55 @@
+<form class="form">
+  <div class="form-group">
+    <label for="name" class="form--label">Name</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="name"
+      class="form-control"
+      [(ngModel)]="nameInput"
+      >
+  </div>
+  <div class="form-group">
+    <label for="surname" class="form--label">Surname</label>
+    <input
+      type="text"
+      name="surname"
+      id="surname"
+      placeholder="surname"
+      class="form-control"
+      [(ngModel)]="surnameInput"
+      >
+  </div>
+  <div class="form-group">
+    <label for="address" class="form--label">Adress</label>
+    <input
+      type="text"
+      name="address"
+      id="address"
+      placeholder="adress"
+      class="form-control"
+      [(ngModel)]="addressInput"
+      >
+  </div>
+  <div class="form-group">
+    <!-- connect age pipe with user model to display age > 18
+      <app-age-calculator
+        [(ngModel)]="birthdateInput"
+      ></app-age-calculator>
+    -->
+    <app-age-calculator
+    ></app-age-calculator>
+  </div>
+</form>
+<div class="user-input--button">
+  <button
+    type="submit"
+    class="btn btn-outline-primary
+    section--xs--top-bottom"
+    (click)="onAddUser()"
+    >
+    Save
+  </button>
+  <div class="unit-spacing--1"></div>
+</div>

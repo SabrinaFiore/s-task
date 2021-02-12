@@ -1,0 +1,54 @@
+/* Setting variables */
+$h-100vh: 100vh;
+
+// wrapper
+$wrapper-max-width--extra-big: $s1440;
+$wrapper-max-width--big: $s960;
+$wrapper-max-width: $s768;
+$wrapper-max-width--small: $s640;
+
+// classes
+.wrapper--extra-big {
+  max-width: $wrapper-max-width--extra-big;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper--big {
+  max-width: $wrapper-max-width--big;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: $wrapper-max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper--small {
+  max-width: $wrapper-max-width--small;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-vh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: $h-100vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
