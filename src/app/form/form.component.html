@@ -37,13 +37,12 @@
       <span
         class="help-block form-group--error-msg"
         *ngIf="email.errors?.required && email.touched">
-        Email is required
+        Email is not valid
       </span>
   </div>
   <div class="form-group">
     <!-- connect age pipe with user model to display age > 18
       <app-age-calculator
-        git branch -M main
       ></app-age-calculator>
     -->
     <app-age-calculator
